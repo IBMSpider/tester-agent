@@ -1,0 +1,36 @@
+frontend/
+│── src/
+│   │── api/
+│   │   │── apiClient.js                   # Axios instance setup
+│   │   │── testCasesApi.js                 # API calls for test case management
+│   │   │── testExecutionApi.js             # API calls for executing tests
+│   │── components/
+│   │   │── Dashboard/
+│   │   │   │── Dashboard.jsx               # Main dashboard UI
+│   │   │   │── Dashboard.css               # Styling for dashboard
+│   │   │── TestCases/
+│   │   │   │── TestCasesList.jsx           # List of test cases
+│   │   │   │── TestCasesForm.jsx           # Add/Edit test cases form
+│   │   │── TestExecution/
+│   │   │   │── TestExecutionLog.jsx        # Display test execution logs
+│   │   │   │── ExecutionChart.jsx          # Chart visualization of test results
+│   │── pages/
+│   │   │── Home.jsx                        # Landing page
+│   │   │── TestCasesPage.jsx               # Test case management page
+│   │   │── ExecutionPage.jsx               # Test execution page
+│   │── routes/
+│   │   │── AppRouter.jsx                   # React Router configuration
+│   │── context/
+│   │   │── TestContext.jsx                 # Context API for test state management
+│   │── assets/                             # Static assets (icons, logos)
+│   │── hooks/                              # Custom hooks (if needed)
+│   │── utils/
+│   │   │── helpers.js                      # Utility functions
+│   │── App.jsx                             # Main app component
+│   │── main.jsx                            # Entry point for React app
+│── public/
+│── index.html                              # Root HTML file
+│── vite.config.js                          # Vite configuration
+│── package.json                            # Project dependencies
+│── README.md                               # Documentation
+
