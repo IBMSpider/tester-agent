@@ -1,0 +1,31 @@
+backend/
+│── app/
+│   │── api/
+│   │   │── v1/
+│   │   │   │── endpoints/
+│   │   │   │   │── test_execution.py   # API for running test cases
+│   │   │   │   │── test_cases.py       # API for managing test cases
+│   │   │   │   │── ai_integration.py   # API for AI-powered test generation
+│   │   │   │   │── auth.py             # API for authentication (if needed)
+│   │   │── dependencies.py             # Common dependencies (DB, auth)
+│   │── core/
+│   │   │── config.py                    # App configuration & settings
+│   │   │── security.py                   # Security settings (CORS, Auth)
+│   │── models/
+│   │   │── test_case.py                  # ORM models for test cases
+│   │   │── execution_result.py           # ORM models for execution results
+│   │── schemas/
+│   │   │── test_case.py                  # Pydantic schemas for validation
+│   │   │── execution_result.py           # Pydantic schemas for API requests
+│   │── services/
+│   │   │── ai_service.py                 # IBM watsonx.ai integration
+│   │   │── test_executor.py              # Logic to execute test cases
+│   │── database/
+│   │   │── session.py                    # Database session setup
+│   │   │── init_db.py                    # Database initialization script
+│   │── main.py                            # Main entry point for FastAPI app
+│   │── router.py                          # API router including all endpoints
+│── .env                                   # Environment variables (DB credentials, API keys)
+│── requirements.txt                        # Python dependencies
+│── Dockerfile                             # Docker config (optional)
+│── README.md                              # Project documentation
